@@ -1,13 +1,19 @@
 public class Main {
+
     public static void main(String[] args) {
+        int startBalance = 100;
+        int added = 1100;
+        int bonus = added / 100;
 
-        // Объявляете переменные для входных данных и
-        // параметров программы: одну для хранения
-        // стоимости билета, другую для хранения количества
-        // рублей для одной бонусной милли
+        int finishBalance;
+        if (added >= 1100) {
+            finishBalance = startBalance + added + bonus;
+        } else {
+            finishBalance = startBalance + added;
+        }
 
-        // Рассчитываете количество бонусных милль, используя
-        // значения заведённых переменных. Ответ сохраняете в
-        // новую переменную и выводите на экран
+
+        System.out.println(finishBalance);
     }
 }
+
